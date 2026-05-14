@@ -2,7 +2,9 @@ from fastapi import APIRouter, Depends
 
 from app.core.security import verify_api_key
 from app.schemas.contact import RequestContact
-from app.services.antonio_claudio_dev.antonio_claudio_dev_email_service import AntonioClaudioDevEmailService
+from app.services.antonio_claudio_dev.antonio_claudio_dev_email_service import (
+    AntonioClaudioDevEmailService,
+)
 
 router = APIRouter(
     prefix="/api/antonio-claudio-dev",

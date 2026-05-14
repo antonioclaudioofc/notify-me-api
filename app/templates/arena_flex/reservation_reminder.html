@@ -1,0 +1,65 @@
+{% extends "arena_flex/base.html" %} {% block header_bg %}#6366f1{% endblock %}
+{% block header_content %}
+<div style="font-size: 48px; margin-bottom: 16px">⚡</div>
+<h1>Está quase na hora!</h1>
+{% endblock %} {% block content %}
+<p style="font-size: 18px; color: #1f2937; margin-bottom: 24px">Olá! 👋</p>
+
+<p>
+  Passando para lembrar que você tem uma partida agendada em breve. Prepare seu
+  equipamento e garanta sua presença!
+</p>
+
+<div
+  class="card"
+  style="
+    background: linear-gradient(135deg, #f5f3ff 0%, #ede9fe 100%);
+    border: none;
+  "
+>
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td style="padding-bottom: 12px">
+        <span class="label" style="color: #6366f1">📍 Localização</span>
+        <span class="value">{{ arena_name }}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+            <td width="50%">
+              <span class="label" style="color: #6366f1">📅 Quando</span>
+              <span class="value">{{ date }}</span>
+            </td>
+            <td width="50%">
+              <span class="label" style="color: #6366f1">⏰ Horário</span>
+              <span class="value">{{ time }}</span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div style="text-align: center; margin-top: 32px">
+  <a
+    href="#"
+    class="btn"
+    style="
+      background-color: #6366f1;
+      color: #ffffff;
+      box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+    "
+    >Ver Localização 📍</a
+  >
+</div>
+
+<p
+  style="font-size: 14px; text-align: center; color: #64748b; margin-top: 32px"
+>
+  Recomendamos chegar com 15 minutos de antecedência. Boa partida!
+</p>
+{% endblock %} {% block footer %} Nos vemos em breve! • Equipe Arena Flex {%
+endblock %}

@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      .header {
+        background-color: #2563eb;
+        padding: 40px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .content {
+        padding: 40px;
+        color: #374151;
+        line-height: 1.6;
+      }
+      .footer {
+        background-color: #f9fafb;
+        padding: 20px;
+        text-align: center;
+        color: #6b7280;
+        font-size: 12px;
+      }
+      .btn {
+        display: inline-block;
+        padding: 14px 28px;
+        background-color: #2563eb;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        margin-top: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 style="margin: 0; font-size: 24px">Arena Manager</h1>
+      </div>
+      <div class="content">
+        <h2 style="color: #111827; margin-top: 0">
+          Confirme seu endereço de e-mail
+        </h2>
+        <p>Olá! Tudo bem?</p>
+        <p>
+          Ficamos felizes com seu interesse no <strong>Arena Manager</strong>.
+          Para ativar sua conta e garantir a segurança dos seus dados,
+          precisamos que você confirme seu e-mail clicando no botão abaixo:
+        </p>
+
+        <div style="text-align: center">
+          <a href="{{ verify_url }}" class="btn">Verificar meu E-mail</a>
+        </div>
+
+        <div
+          style="
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 14px;
+            color: #6b7280;
+          "
+        >
+          <p><strong>Email:</strong> {{ email }}</p>
+          <p><strong>Solicitado em:</strong> {{ formatted_date }}</p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Se você não solicitou este cadastro, pode ignorar este e-mail com
+          segurança.
+        </p>
+        <p>© 2026 Arena Manager • Gestão de Alta Performance</p>
+      </div>
+    </div>
+  </body>
+</html>

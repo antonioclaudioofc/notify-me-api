@@ -1,0 +1,37 @@
+{% extends "arena_flex/base.html" %} {% block header_content %}
+<div style="font-size: 48px; margin-bottom: 16px">🚀</div>
+<h1>Sua conta no Arena Flex está pronta!</h1>
+{% endblock %} {% block content %}
+<p style="font-size: 18px; color: #1f2937; margin-bottom: 24px">
+  Olá, <strong>{{ name }}</strong>!
+</p>
+
+<p>
+  Seja bem-vindo! Agora você faz parte da comunidade <strong>Arena Flex</strong>.
+  Esqueça as complicações: a partir de agora, reservar sua quadra e organizar 
+  suas partidas ficou muito mais simples e rápido.
+</p>
+
+<div class="card">
+  <span class="label">Seus dados de acesso</span>
+  <div style="margin-top: 12px">
+    <span style="color: #64748b; font-size: 14px">E-mail:</span>
+    <span class="value">{{ email }}</span>
+  </div>
+  <div style="margin-top: 8px">
+    <span style="color: #64748b; font-size: 14px">Data de cadastro:</span>
+    <span class="value">{{ formatted_date }}</span>
+  </div>
+</div>
+
+<p style="margin-bottom: 32px">
+  Para começar, explore as arenas disponíveis, escolha seu horário e 
+  prepare-se para o jogo!
+</p>
+
+<div style="text-align: center">
+  <a href="#" class="btn" style="background-color: #4f46e5; color: #ffffff"
+    >Buscar Arenas e Quadras</a
+  >
+</div>
+{% endblock %}

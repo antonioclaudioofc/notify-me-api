@@ -1,0 +1,63 @@
+{% extends "arena_flex/base.html" %} {% block header_bg %}{{ color }}{% endblock
+%} {% block header_content %}
+<h1>{{ title }}</h1>
+{% endblock %} {% block content %}
+<p style="font-size: 18px; color: #1f2937; margin-bottom: 24px">
+  Olá, <strong>{{ name }}</strong>!
+</p>
+
+<p>
+  Temos uma atualização sobre a sua reserva na
+  <strong>{{ arena_name }}</strong>. Confira os detalhes abaixo:
+</p>
+
+<div style="text-align: center; margin-bottom: 24px;">
+  <span style="
+    background-color: {{ color }};
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  ">
+    {{ status_label }}
+  </span>
+</div>
+
+
+<div
+  class="card"
+  style="background-color: #ffffff; border: 2px solid {{ color }};"
+>
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td style="padding-bottom: 16px">
+        <span class="label">Arena</span>
+        <span class="value" style="font-size: 18px">{{ arena_name }}</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+          <tr>
+            <td width="50%">
+              <span class="label">Data</span>
+              <span class="value">{{ date }}</span>
+            </td>
+            <td width="50%">
+              <span class="label">Horário</span>
+              <span class="value">{{ time }}</span>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p style="font-size: 14px; text-align: center; color: #64748b">
+  Caso precise realizar qualquer alteração ou tenha dúvidas, entre em contato
+  diretamente com a administração da arena.
+</p>
+{% endblock %}

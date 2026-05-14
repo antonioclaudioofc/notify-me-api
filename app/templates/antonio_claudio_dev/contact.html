@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f8fafc;
+        font-family:
+          "Inter",
+          -apple-system,
+          sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border: 1px solid #e2e8f0;
+      }
+      .header {
+        background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+        padding: 32px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .content {
+        padding: 40px;
+        color: #334155;
+      }
+      .footer {
+        padding: 24px;
+        background-color: #f8fafc;
+        text-align: center;
+        color: #64748b;
+        font-size: 12px;
+        border-top: 1px solid #e2e8f0;
+      }
+      .message-box {
+        background-color: #f1f5f9;
+        border-radius: 8px;
+        padding: 24px;
+        margin-top: 24px;
+        border-left: 4px solid #3b82f6;
+      }
+      .detail-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #94a3b8;
+        font-weight: 700;
+        margin-bottom: 4px;
+        display: block;
+      }
+      .detail-value {
+        font-size: 16px;
+        color: #1e293b;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 style="margin: 0; font-size: 20px; letter-spacing: 1px">
+          Portfólio Contato
+        </h1>
+      </div>
+      <div class="content">
+        <h2 style="color: #1e293b; margin-top: 0; font-size: 24px">
+          Nova mensagem recebida!
+        </h2>
+        <p>
+          Você recebeu um novo contato através do seu formulário de portfolio.
+          Veja os detalhes abaixo:
+        </p>
+
+        <div style="margin-top: 32px">
+          <div style="margin-bottom: 16px">
+            <span class="detail-label">Remetente</span>
+            <span class="detail-value">{{ name }}</span>
+          </div>
+          <div style="margin-bottom: 16px">
+            <span class="detail-label">E-mail</span>
+            <a
+              href="mailto:{{ email }}"
+              style="color: #3b82f6; text-decoration: none"
+              class="detail-value"
+              >{{ email }}</a
+            >
+          </div>
+          <div>
+            <span class="detail-label">Data de envio</span>
+            <span class="detail-value">{{ formatted_date }}</span>
+          </div>
+        </div>
+
+        <div class="message-box">
+          <span class="detail-label" style="color: #64748b; margin-bottom: 12px"
+            >Mensagem</span
+          >
+          <p style="margin: 0; white-space: pre-line; color: #1e293b">
+            {{ message }}
+          </p>
+        </div>
+      </div>
+      <div class="footer">
+        <p>
+          Este e-mail foi gerado automaticamente pelo seu sistema de
+          notificações.
+        </p>
+        <p>© 2026 Antonio Claudio • Developer Portfolio</p>
+      </div>
+    </div>
+  </body>
+</html>

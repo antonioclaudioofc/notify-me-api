@@ -2,7 +2,6 @@ from abc import ABC, abstractmethod
 
 
 class EmailService(ABC):
-
     @abstractmethod
     def send_verification_email(self, data: dict):
         pass

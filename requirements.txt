@@ -10,4 +10,5 @@ python-dotenv==1.2.2
 pytz==2026.1.post1
 typing-inspection==0.4.2
 typing_extensions==4.15.0
+Jinja2==3.1.5
 uvicorn>=0.34.0

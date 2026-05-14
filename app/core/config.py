@@ -14,7 +14,6 @@ class Settings(BaseSettings):
 
     API_KEY: str
 
-
     class Config:
         env_file = ".env"
 

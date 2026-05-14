@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f3f4f6;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .container {
+        max-width: 600px;
+        margin: 40px auto;
+        background: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+      .header {
+        background-color: #3b82f6;
+        padding: 40px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .content {
+        padding: 40px;
+        color: #374151;
+        line-height: 1.6;
+      }
+      .footer {
+        background-color: #f9fafb;
+        padding: 20px;
+        text-align: center;
+        color: #6b7280;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1 style="margin: 0; font-size: 24px">Arena Manager</h1>
+      </div>
+      <div class="content">
+        <h2 style="color: #1e40af; margin-top: 0">
+          🏟️ Nova quadra cadastrada!
+        </h2>
+        <p>Olá, <strong>{{ name }}</strong>!</p>
+        <p>
+          A quadra <strong>{{ court_name }}</strong> foi adicionada com sucesso
+          à sua arena <strong>{{ arena_name }}</strong>.
+        </p>
+
+        <p>Ela já está integrada ao sistema e pronta para:</p>
+        <ul style="padding-left: 20px">
+          <li>Definição de tabelas de preços</li>
+          <li>Configuração de horários fixos</li>
+          <li>Recebimento de reservas online</li>
+        </ul>
+
+        <p style="margin-top: 32px">Boas vendas e ótimos jogos!</p>
+
+        <p style="font-size: 14px; color: #6b7280; margin-top: 40px">
+          Data do cadastro: {{ formatted_date }}
+        </p>
+      </div>
+      <div class="footer">
+        <p>© 2026 Arena Manager • Soluções Inteligentes</p>
+      </div>
+    </div>
+  </body>
+</html>

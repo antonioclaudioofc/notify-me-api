@@ -3,7 +3,9 @@ from fastapi import APIRouter, Depends
 from app.core.security import verify_api_key
 from app.schemas.email_verification import RequestEmailVerification
 from app.schemas.requests import OwnerPromotionRequest, NewCourtRequest
-from app.services.arena_manager.arena_manager_email_service import ArenaManagerEmailService
+from app.services.arena_manager.arena_manager_email_service import (
+    ArenaManagerEmailService,
+)
 
 router = APIRouter(
     prefix="/api/arena-manager",

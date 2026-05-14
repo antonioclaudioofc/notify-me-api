@@ -1,0 +1,53 @@
+{% extends "arena_flex/base.html" %} {% block header_bg
+%}linear-gradient(135deg, #059669 0%, #10b981 100%){% endblock %} {% block
+header_content %}
+<div style="font-size: 48px; margin-bottom: 16px">🏆</div>
+<h1>Novo Proprietário Verificado</h1>
+{% endblock %} {% block content %}
+<p style="font-size: 18px; color: #1f2937; margin-bottom: 24px">
+  Parabéns, <strong>{{ name }}</strong>!
+</p>
+
+<p>
+  Você acaba de ser promovido a proprietário da arena
+  <strong>{{ arena_name }}</strong>. Isso significa que você agora tem controle
+  total sobre todas as operações da unidade no Arena Flex.
+</p>
+
+<div class="card">
+  <h2 style="color: #059669; margin-bottom: 16px">Recursos Desbloqueados:</h2>
+  <table width="100%" cellpadding="0" cellspacing="0" role="presentation">
+    <tr>
+      <td style="padding: 8px 0; border-bottom: 1px solid #e2e8f0">
+        <span style="font-size: 14px; color: #4b5563"
+          >✅ Gestão de Inventário e Quadras</span
+        >
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 0; border-bottom: 1px solid #e2e8f0">
+        <span style="font-size: 14px; color: #4b5563"
+          >✅ Controle Financeiro e Fluxo de Caixa</span
+        >
+      </td>
+    </tr>
+    <tr>
+      <td style="padding: 8px 0">
+        <span style="font-size: 14px; color: #4b5563"
+          >✅ Relatórios Analíticos em Tempo Real</span
+        >
+      </td>
+    </tr>
+  </table>
+</div>
+
+<p style="margin-bottom: 32px; font-style: italic">
+  "Sua visão, nossa tecnologia. O sucesso da sua arena começa aqui."
+</p>
+
+<div style="text-align: center">
+  <a href="#" class="btn" style="background-color: #059669; color: #ffffff"
+    >Gerenciar minha Arena</a
+  >
+</div>
+{% endblock %}
